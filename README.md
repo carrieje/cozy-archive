@@ -7,8 +7,14 @@
 
 ## What's Cozy archive?
 
-<TODO>...
+Cozy archive aims to help you manage your everyday documents.
+Its first focus is to classify your documents by category, and give you
+informations on how long you should keep it regarding the law.
+For now, the expected retention period is given relatively to the [french law].
 
+Here is the class diagram for this app.
+
+![class diagram for cozy-archive](/doc/diagram.svg)
 
 ## Hack
 
@@ -144,6 +150,7 @@ Cozy archive is developed by carrieje and distributed under the [AGPL v3 license
 
 
 
+[french law]: https://www.service-public.fr/particuliers/vosdroits/F19134
 [cozy]: https://cozy.io "Cozy Cloud"
 [setup]: https://dev.cozy.io/#set-up-the-development-environment "Cozy dev docs: Set up the Development Environment"
 [yarn]: https://yarnpkg.com/
