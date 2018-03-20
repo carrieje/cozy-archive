@@ -2,9 +2,7 @@ import React from 'react'
 import { Route, Switch, Redirect, HashRouter } from 'react-router-dom'
 
 import Sidebar from './Sidebar'
-import Hello1 from './HelloViews/Hello1'
-import Hello2 from './HelloViews/Hello2'
-import Hello3 from './HelloViews/Hello3'
+import Index from './Views/Index'
 
 const App = ({ children }) => (
   <HashRouter>
@@ -12,11 +10,9 @@ const App = ({ children }) => (
       <Sidebar />
       <main className='app-content'>
         <Switch>
-          <Route path='/viewhello1' component={Hello1} />
-          <Route path='/viewhello2' component={Hello2} />
-          <Route path='/viewhello3' component={Hello3} />
-          <Redirect from='/' to='/viewhello1' />
-          <Redirect from='*' to='/viewhello1' />
+          <Route path='/index' component={Index} />
+          <Redirect from='/' to='/index' />
+          <Redirect from='*' to='/index' />
         </Switch>
       </main>
     </div>
