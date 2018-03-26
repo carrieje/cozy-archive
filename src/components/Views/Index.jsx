@@ -2,8 +2,8 @@ import React from 'react'
 import Category from './Category'
 
 export const Index = () => (
-  <div class='category-list'>
-    <Category name='Assurance' />
+  <ul class='nav nav-tabs'>
+    <Category name='Assurance' active='true' />
     <Category name='Véhicule' />
     <Category name='Banque' />
     <Category name='Famille – Scolarité' />
@@ -11,7 +11,7 @@ export const Index = () => (
     <Category name='Impôts et Taxes' />
     <Category name='Travail, Chômage, Retraite' />
     <Category name='Santé' />
-  </div>
+  </ul>
 )
 
 export default Index

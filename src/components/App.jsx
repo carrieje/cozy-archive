@@ -1,13 +1,11 @@
 import React from 'react'
 import { Route, Switch, Redirect, HashRouter } from 'react-router-dom'
 
-import Sidebar from './Sidebar'
 import Index from './Views/Index'
 
 const App = ({ children }) => (
   <HashRouter>
-    <div className='app-wrapper o-layout--2panes'>
-      <Sidebar />
+    <div className='app-wrapper'>
       <main className='app-content'>
         <Switch>
           <Route path='/index' component={Index} />
